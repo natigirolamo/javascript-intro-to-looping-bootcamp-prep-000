@@ -1,6 +1,11 @@
-function whileLoop(number) {
-while (number > 0) {
-console.log(–number);
+function doWhileLoop(array){
+function maybeTrue() {
+return Math.random() >= 0.5
 }
-return “done”;
+
+do {
+array.pop();
+} while (array.length > 0 &&maybeTrue());
+return array;
+
 }
